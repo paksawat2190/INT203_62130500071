@@ -1,0 +1,328 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet" />
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+        rel="stylesheet" />
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<style>
+
+.bg1 {
+background-image: url("images/h1.1.jpg");
+height: 70%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}  
+
+.bg2 {
+background-image: url("images/h2.jpg");
+height: 70%; 
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}  
+
+.bg3{ 
+background-image: url("images/h3.jpg");
+height: 70%; 
+background-position: top;
+background-repeat: no-repeat;
+background-size: 70%;
+}  
+
+.bg4{ 
+background-image: url("images/h4.2.jpg");
+height: 70%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+}  
+
+.bg5{ 
+background-image: url("images/h5.2.jpg");
+height: 70%; 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 100%;
+}  
+
+.bg6{ 
+background-image: url("images/h6.jpg");
+height: 70%; 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 100%;
+}  
+
+.bg7{ 
+background-image: url("images/h7.jpg");
+height: 70%; 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 100%;
+} 
+
+.bg8{ 
+background-image: url("images/h8.jpg");
+height: 70%; 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 100%;
+} 
+
+.bg9{ 
+background-image: url("images/h9.jpg");
+height: 70%; 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 100%;
+} 
+
+
+
+</style>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="bg-black flex py-1"></div>
+        <div class="bg-white p-8 flex justify-between items-center">
+            <div class="pl-96">
+                <h1 class="pl-64 text-4xl font-bold tracking-widest">CHANEL</h1>
+            </div>
+            <div class="flex pr-24">
+                <a href="#"> <img src="images/search.jpg" width="35"
+                        alt="searh"></a>
+                <a href="#"> <img src="images/star.jpg" width="35" alt="star"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- secHeader -->
+    <div class="flex justify-center pb-4">
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">โอต์กูตูร์</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">แฟชั่น</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">อัญมณีชั้นสูง</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">เครื่องประดับอัญมณี</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">นาฬิกา</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">แว่นตา</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">น้ำหอม</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">เครื่องสำอาง</a>
+        <a href="#" class="inline-block py-2 px-3 mr-4 text-xs">ผลิตภัณฑ์บำรุงผิว</a>
+        <a href="#" class="inline-block py-2 px-3 pl-7 font-semibold text-xs">ABOUT
+            CHANEL</a>
+    </div>
+
+    <!-- features -->
+    <!-- <div class="h-full bg-center bg-no-repeat pt-96" style="background-image: url(images/h1.1.jpg)"> -->
+    <div class="bg1 pt-72">
+        <p class="text-center text-white font-semibold">โอต์ กูตูร์</p>
+        <p class="text-center text-white font-semibold text-3xl">แฟชั่นโชว์</p>
+        <p class="text-center text-white font-semibold text-4xl">คอลเลคชั่นประจำฤดูใบไม้ผลิ-ฤดูร้อน2021</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg2 pt-72">
+        <p class="text-center text-white font-semibold">แฟชั่น</p>
+        <p class="text-center text-white font-semibold text-4xl">พรี-คอลเลคชั่นฤดูใบไม้ผลิ-ฤดูร้อน
+            2021</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg3 pt-72">
+        <p class="text-center text-white font-semibold">แว่นตา</p>
+        <p class="text-center text-white font-semibold text-3xl">แคมเปญแว่นตา
+            ต้อนรับฤดูร้อน</p>
+        <p class="text-center text-white font-semibold text-4xl">ใบไม้ผลิ-ฤดูร้อน2021</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg4 pt-72">
+        <p class="text-center text-white font-semibold">เครื่องสำอาง</p>
+        <p class="text-center text-white font-semibold text-3xl">ROUGE ALLURE
+            VELVET</p>
+        <p class="text-center text-white font-semibold text-3xl">LE LION DE
+            CHANEL</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg5 pt-72">
+        <p class="text-center text-white font-semibold">INSIDE CHANEL</p>
+        <p class="text-center text-white font-semibold text-3xl">บทที่ 30</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none border-2
+                hover:underline"><a
+                    href="#">ชมภาพยนตร์</a></p>
+        </div>
+    </div>
+
+    <div class="bg6 pt-72">
+        <p class="text-center text-white font-semibold">นาฬิกา</p>
+        <p class="text-center text-white font-semibold text-3xl">J12</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none border-2
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg7 pt-72">
+        <div class="m-7 flex justify-center pt-28">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">SEE MORE</a></p>
+        </div>
+    </div>
+
+    <div class="bg8 pt-72">
+        <p class="text-center text-white font-semibold">อัญมณีชั้นสูง</p>
+        <p class="text-center text-white font-semibold text-3xl
+            tracking-widest">LE PARIS RUSSE</p>
+        <p class="text-center text-white font-semibold text-3xl
+            tracking-widest">DE CHANEL</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg9 pt-72">
+        <p class="text-center text-white font-semibold">ผลิตภัณฑ์บำรุงผิว</p>
+        <p class="text-center text-white font-semibold text-3xl
+            tracking-widest">LIFT YOUR BEAUTY</p>
+        <div class="m-7 flex justify-center">
+            <p class="py-3 px-4 inline-block pt-4 rounded-none bg-white
+                hover:underline"><a
+                    href="#">พบกับสิ่งดีๆอีกมากมาย</a></p>
+        </div>
+    </div>
+
+    <div class="bg-white p-8 flex">
+        <div class="">
+            <div>
+                <p>ติดต่อที่ปรึกษา</p>
+                <p class="text-gray-400">หากต้องการพูดคุยกับลูกค้าสัมพันธ์โทร <a
+                        class="text-black underline"
+                        href="#">(66) 2 0184199</a> </p>
+                <p class="text-gray-400">หรือใช้บริการจัดส่งด้านล่าง</p>
+            </div>
+            <div class="flex pt-4 space-x-10">
+                <p class="underline border-black text-sm text-gray-800
+                    hover:underline"><a
+                        href="#">อีเมล</a></p>
+                <p class="underline border-black text-sm text-gray-800
+                    hover:underline"><a
+                        href="#">โทร</a></p>
+            </div>
+        </div>
+        <div class="pl-40">
+            <p class="text-sm">ค้นหาร้าน</p>
+            <p class="text-gray-400">ระบุสถานที่ตั้งเพื่อค้นหาร้านชาเนลที่ใกล้ที่สุด</p>
+            <form class="pt-12 flex">
+                <input class="border-b-2 w-64 hover:underline"
+                    placeholder="ค้นหาจากชื่อเมืองหรือรหัสไปรษณีย์">
+                <button> <img src="images/search.jpg" width="35" alt="searh">
+                </button>
+                <button> <img src="images/location.JPG" width="35" alt="searh">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-black pb-20">
+        <div class="flex justify-center">
+            <p class="font-bold text-white pt-32 text-4xl tracking-widest">CHANEL</p>
+        </div>
+
+        <div class="grid grid-cols-4 ml-36 pt-40">
+            <div class="flex flex-col">
+                <p class="text-white pb-5">เข้าสู่เว็บไซต์ chanel.com</p>
+                <a href="#" class="text-gray-300">โอต์กูตูร์</a>
+                <a href="#" class="text-gray-300">แฟชั่น</a>
+                <a href="#" class="text-gray-300">อัญมณีชั้นสูง</a>
+                <a href="#" class="text-gray-300">เครื่องประดับอัญมณี</a>
+                <a href="#" class="text-gray-300">นาฬิกา</a>
+                <a href="#" class="text-gray-300">แว่นตา</a>
+                <a href="#" class="text-gray-300">น้ำหอม</a>
+                <a href="#" class="text-gray-300">เครื่องสำอาง</a>
+                <a href="#" class="text-gray-300">ผลิตภัณฑ์บำรุงผิว</a>
+                <a href="#" class="text-gray-300">แผนผังเว็บไซต์</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-white pb-5">การบริการในบูติค</p>
+                <a href="#" class="text-gray-300">เครื่องมือหาร้าน</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-white pb-5">แบรนด์ชาเนล</p>
+                <a href="#" class="text-gray-300">การรายงานต่อสังคม</a>
+                <a href="#" class="text-gray-300">การต่อสู้กับสินค้าลอกเลียนแบบ</a>
+                <a href="#" class="text-gray-300">ผลประกอบการทางการเงิน</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-white pb-5">บริการออนไลน์</p>
+                <a href="#" class="text-gray-300">ตำแหน่งงาน</a>
+                <a href="#" class="text-gray-300">ความเป็นส่วนตัว</a>
+                <a href="#" class="text-gray-300">กฎหมาย</a>
+                <a href="#" class="text-gray-300">คำถามที่พบบ่อย</a>
+                <a href="#" class="text-gray-300">การดูแลรักษาและการบริการ</a>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="bg-black pb-6">
+        <div class="flex flex-row inline-block justify-between border-t
+            border-gray-800 ml-36 mr-36">
+
+            <div class="pt-6">
+                <p class="text-gray-300 text-sm">Change location and language <a
+                        href="#" class="text-white">ไทย</a>- <a href="#"
+                        class="text-white">ไทย</a></p>
+            </div>
+
+            <div class="flex items-center flex-row pt-2">
+                <a href=""><img src="images/ig.JPG" width="35" height="35"
+                        alt="IG"></a>
+                <a href=""><img src="images/facebook.JPG" width="35" height="35"
+                        alt="FB"></a>
+                <a href=""><img src="images/tw.JPG" width="35" height="35"
+                        alt="TW"></a>
+                <a href=""><img src="images/youtube.JPG" width="35" height="35"
+                        alt="YT"></a>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- end -->
+</body>
